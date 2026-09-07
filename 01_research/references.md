@@ -1,5 +1,21 @@
 # References
 
+## Dataset:
+
+Brazilian E-Commerce Public Dataset by Olist
+
+Dataset page: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+Notes:
+- Contains approximately 100,000 e-commerce orders.
+- Covers orders from 2016–2018.
+- Includes information about orders, customers, sellers, products, payments,
+  freight, reviews, and geography.
+- Olist states that this is real commercial data.
+- The dataset has been anonymized.
+- Identifying references to companies and partners in review text were replaced.
+
+---
 
 ## Source format
 - **Citation:**
