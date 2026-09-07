@@ -3,7 +3,7 @@
 ## Working title
 Seller Performance & Customer Experience Analysis in E-Commerce
 
-## Working research question (v1)
+## Working research question
 Which operational, product, and geographic factors are most strongly associated with seller performance and customer satisfaction in the Olist Brazilian e-commerce marketplace?
 
 ## Current scope
