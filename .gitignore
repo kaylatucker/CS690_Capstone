@@ -1,0 +1,21 @@
+# Raw and processed data
+02_data/raw/*
+02_data/processed/*
+
+# Keep folder structure
+!02_data/raw/.gitkeep
+!02_data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
