@@ -28,3 +28,20 @@
 - Treat logically impossible delivery durations as missing when creating duration-based features.
 - Leave late-delivery status missing when an actual delivery date is unavailable rather than classifying the order as not late.
 - Keep extreme delivery times and freight percentages for EDA before deciding whether any outlier treatment is necessary.
+
+## 2026-09-29
+
+- Use `review_score` aggregated to one value per order as the primary customer-experience outcome.
+- Keep the customer-experience analysis dataset at one row per order.
+- Represent order-level product characteristics with product count, category count, and a representative primary category rather than joining raw item rows directly.
+- Keep `category_count` separately so the representative primary category is not interpreted as meaning an order contained only one category.
+- Assign seller characteristics only to single-seller orders; leave seller-specific fields missing for multi-seller orders.
+- Do not use `seller_average_review` as a predictor in the customer-experience dataset because it is derived from the same review outcome and could create circularity.
+- Do not use seller-level late-delivery rate as a main customer-experience predictor when order-level delivery measures are already available.
+- Retain orders with missing reviews, item records, delivery dates, or seller attribution rather than deleting them from the master customer-experience dataset.
+- Keep customer and seller geography primarily at the state level for now; more detailed geographic measures can be added later if they provide analytical value.
+- Treat the customer-experience and seller-performance datasets as separate analysis-ready tables rather than combining them into one universal dataset.
+- For report visualization only, rounded order-level average review scores may be displayed on the original 1–5 scale; the underlying unrounded values remain unchanged.
+- Use the average review score by delivery status as the main exploratory chart for the Data Information and Quality Report because it directly relates to the research question.
+- Use a compact data-quality issues table in the report rather than including every cleaning result or anomaly.
+- Keep unusual values and outliers for later EDA unless analysis provides a documented reason for exclusion.
