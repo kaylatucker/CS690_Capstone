@@ -1,10 +1,8 @@
-# Raw and processed data
+# Raw data only
 02_data/raw/*
-02_data/processed/*
 
 # Keep folder structure
 !02_data/raw/.gitkeep
-!02_data/processed/.gitkeep
 
 # Python
 __pycache__/
