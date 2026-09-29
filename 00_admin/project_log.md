@@ -62,3 +62,36 @@
 - Continue documenting cleaning decisions and unresolved anomalies.
 - Review extreme values during exploratory analysis rather than removing them automatically.
 - Return to background research before final analysis and reporting.
+
+## 2026-09-29 — Customer Experience Dataset and Data Quality Report Preparation
+
+### Progress
+- Completed the customer-experience analysis dataset at the order level.
+- Aggregated reviews to one review score per order before joining.
+- Created order-level product/category measures, including product count, category count, and a representative primary category.
+- Identified seller count for each order and assigned seller characteristics only to single-seller orders.
+- Added customer geography and selected seller characteristics to the order-level dataset.
+- Validated that the final customer-experience dataset contains 99,441 rows, 99,441 unique order IDs, and no duplicate orders.
+- Exported `customer_experience.csv` to `02_data/processed/` and saved the completed notebook to GitHub.
+- Began the Data Information and Quality Report notebook.
+- Created dataset-dimension, missingness, summary-statistics, review-score, late-delivery, and data-quality summaries.
+- Created initial exploratory visualizations, including review-score distribution and average review score by delivery status.
+- Prepared a compact data-quality issues table for use in the final report.
+
+### Data Findings
+- 98,673 orders have an aggregated review score; 768 orders have no review score.
+- 98,666 orders contain item records; 775 orders have no item records.
+- 97,388 item-containing orders are single-seller and 1,278 are multi-seller.
+- Seller characteristics are unavailable for 2,053 orders: 775 orders without item/seller information plus 1,278 multi-seller orders.
+- 2,965 orders do not have valid delivery-based measures because customer delivery dates are missing.
+- Customer state is available for all 99,441 orders.
+- Primary product category is missing for 2,164 orders because some orders have no item records or contain products with missing category information.
+- Initial EDA showed an average review score of approximately 4.29 for on-time orders compared with 2.57 for late orders.
+- The delivery/review relationship is an exploratory association and does not establish causation.
+
+### Next Steps
+- Finish formatting and writing the Data Information and Quality Report.
+- Submit PSD3.
+- Begin more detailed seller-performance and customer-experience EDA.
+- Use the EDA results to determine appropriate statistical methods for later analysis.
+- Continue documenting important project decisions and limitations.
