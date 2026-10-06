@@ -45,3 +45,21 @@
 - Use the average review score by delivery status as the main exploratory chart for the Data Information and Quality Report because it directly relates to the research question.
 - Use a compact data-quality issues table in the report rather than including every cleaning result or anomaly.
 - Keep unusual values and outliers for later EDA unless analysis provides a documented reason for exclusion.
+
+## 2026-10-06
+
+- Keep `review_score` as the primary customer-experience outcome.
+- Treat delivery performance as a primary customer-experience factor because it showed the clearest relationship with review score during EDA.
+- Use nonparametric methods where appropriate because review scores are ordinal and many project variables are strongly skewed.
+- Use Mann-Whitney U for the initial two-group comparison of on-time and late review-score distributions.
+- Use Spearman correlation for initial continuous-variable relationships because it is less dependent on normality and linear relationships.
+- Use `seller_total_sales` as the initial seller-performance baseline outcome.
+- Treat seller order count, product count, category count, and average item value as baseline seller characteristics.
+- Keep the customer baseline intentionally simple so later multivariable methods can be compared against it.
+- Retain all sellers in descriptive EDA rather than automatically excluding low-volume sellers.
+- For analyses that rely heavily on seller average review or late-delivery rate, consider sensitivity analyses requiring at least 5 or 10 eligible observations.
+- Do not treat statistically significant results as automatically important; consider effect size, descriptive differences, sample size, and business relevance.
+- Do not interpret EDA, correlations, or baseline comparisons as causal relationships.
+- Use median values when describing heavily skewed variables such as order value and freight percentage where appropriate.
+- Restrict category/state comparisons to groups with sufficient observations when necessary to avoid emphasizing unstable averages from very small groups.
+- Carry delivery performance, order value, category, seller characteristics, and geography forward as candidate explanatory factors for later multivariable analysis.
