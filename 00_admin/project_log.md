@@ -95,3 +95,43 @@
 - Begin more detailed seller-performance and customer-experience EDA.
 - Use the EDA results to determine appropriate statistical methods for later analysis.
 - Continue documenting important project decisions and limitations.
+
+
+## 2026-10-06 — Seller EDA, Customer EDA, and Initial Baseline Analysis
+
+### Progress
+- Completed seller-level exploratory data analysis using `seller_metrics.csv`.
+- Examined seller order volume, items sold, total sales, product/category variety, freight, review scores, late-delivery rates, observation counts, and seller geography.
+- Confirmed that seller activity and monetary measures are strongly right-skewed.
+- Completed customer-experience EDA using `customer_experience.csv`.
+- Examined review score in relation to delivery status, delivery delay, order value, freight percentage, product category, seller characteristics, and geography.
+- Identified delivery performance as the clearest descriptive relationship with customer review score.
+- Reviewed candidate statistical methods based on the distributions and variable types observed during EDA.
+- Completed an initial customer-experience baseline using delivery status and delivery delay.
+- Completed an initial seller-performance baseline using total sales and selected seller characteristics.
+- Documented the baseline results and limitations in `09_methods_and_baseline.ipynb`.
+
+### Findings
+- Seller activity is highly concentrated among a relatively small number of sellers. Median seller order count is 6, compared with a maximum of 1,854.
+- Median seller total sales are about 821 BRL, while the maximum exceeds 229,000 BRL.
+- Seller review scores are generally high, with a median seller average review of about 4.24.
+- Seller late-delivery rates are generally low, but review and delivery measures can be unstable for sellers with limited transaction histories.
+- 1,329 sellers have fewer than 5 reviewed orders and 1,353 have fewer than 5 valid delivery observations.
+- Most sellers are relatively specialized: the median seller offers 4 products and operates in 1 product category.
+- Seller geography is highly concentrated in São Paulo, which contains 1,849 of the 3,095 sellers.
+- Customer review scores have a mean of 4.09 and median of 5.
+- On-time orders average about 4.29 review points compared with 2.57 for late orders.
+- The customer baseline showed a 1.72-point average review difference between on-time and late orders.
+- A Mann-Whitney U test found a statistically significant difference in review-score distributions between on-time and late orders.
+- Delivery delay and review score had a Spearman correlation of -0.176, indicating a relatively weak negative monotonic relationship.
+- Product category showed some variation in customer reviews, including an average of about 4.46 for `books_general_interest` and 3.63 for `office_furniture` among categories with at least 500 orders.
+- Order value showed some variation across review groups, while freight percentage showed comparatively little.
+- Same-state customer/seller orders averaged about 4.23 compared with 4.06 for different-state orders.
+- Seller total sales had strong positive Spearman relationships with seller order count (0.853) and product count (0.786), and moderate relationships with category count (0.506) and average item value (0.490).
+
+### Next Steps
+- Prepare PSD4 using the strongest EDA findings and the initial baseline results.
+- Continue evaluating which relationships are important enough to carry into formal analysis.
+- Compare future improved methods against the simple customer-experience and seller-performance baselines.
+- Consider sensitivity analyses using minimum seller observation thresholds when review or late-delivery rates are central to the analysis.
+- Continue documenting limitations related to skewness, geographic imbalance, small seller sample sizes, and non-causal interpretation.
