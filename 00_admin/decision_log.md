@@ -63,3 +63,17 @@
 - Use median values when describing heavily skewed variables such as order value and freight percentage where appropriate.
 - Restrict category/state comparisons to groups with sufficient observations when necessary to avoid emphasizing unstable averages from very small groups.
 - Carry delivery performance, order value, category, seller characteristics, and geography forward as candidate explanatory factors for later multivariable analysis.
+
+## 2026-10-14
+
+- Use rank-biserial correlation as the effect-size measure accompanying the Mann-Whitney U customer baseline comparison.
+- Treat the on-time versus late review difference as a robust baseline relationship because the same direction appears across all qualifying product-category and customer-state groups tested.
+- Continue describing the delivery/review relationship as an association rather than a causal effect, even though it remains consistent across subgroup checks.
+- Use minimum subgroup sizes of 500 on-time orders and 100 late orders for the current category/state robustness checks so very small groups do not drive interpretation.
+- Keep the full seller population as the primary descriptive dataset rather than removing low-volume sellers.
+- Use sellers with at least 10 orders as a sensitivity sample for checking whether seller-performance relationships depend heavily on very small sellers.
+- Interpret seller product-count and especially category-count relationships more cautiously because their correlations with total sales weakened among sellers with at least 10 orders.
+- Treat seller order count as the most stable seller baseline relationship with total sales, while recognizing that the relationship is partly structural because more orders create more opportunities for sales.
+- Keep average item value as a relevant seller factor because its relationship with total sales remained stable in the sensitivity analysis.
+- Treat the current customer and seller analyses as the completed baseline benchmark for later comparison with improved methods.
+- Do not add additional baseline methods solely for complexity; later work should address the baseline's inability to consider multiple explanatory factors simultaneously.
