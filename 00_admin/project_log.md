@@ -135,3 +135,34 @@
 - Compare future improved methods against the simple customer-experience and seller-performance baselines.
 - Consider sensitivity analyses using minimum seller observation thresholds when review or late-delivery rates are central to the analysis.
 - Continue documenting limitations related to skewness, geographic imbalance, small seller sample sizes, and non-causal interpretation.
+
+## 2026-10-14 — Baseline Implementation, Evaluation, and Checkpoint
+
+### Progress
+- Completed the formal baseline implementation and evaluation in `09_methods_and_baseline.ipynb`.
+- Added a rank-biserial effect size to the on-time versus late customer-review comparison.
+- Created a compact customer baseline summary and baseline visualization.
+- Evaluated whether the delivery/review relationship remained consistent within major product categories and customer states.
+- Incorporated instructor feedback from the Data Information and Quality Report by checking the delivery relationship within category and geographic subgroups.
+- Completed a seller sensitivity analysis comparing the full seller population with sellers having at least 10 orders.
+- Documented baseline limitations and identified what the later improved analysis will need to address.
+
+### Findings
+- The customer baseline contains 95,830 orders with valid review and delivery-status information.
+- On-time orders averaged 4.29 review points compared with 2.57 for late orders, a difference of 1.72 points.
+- The on-time/late comparison had a rank-biserial effect size of 0.554, supporting practical importance beyond statistical significance.
+- The delivery/review relationship remained consistent across all 19 product categories that met the analysis thresholds; category review gaps ranged from 1.21 to 1.99 points.
+- On-time orders also had higher average reviews in all 14 qualifying customer states; state review gaps ranged from 1.39 to 2.11 points.
+- The seller sensitivity analysis retained 1,271 sellers with at least 10 orders.
+- Seller order count remained strongly related to total sales in the sensitivity sample (`rho = 0.753`).
+- Product count remained positively related to sales but weakened from 0.786 to 0.558.
+- Category count weakened substantially from 0.506 to 0.245.
+- Average item value remained moderately related to sales and increased slightly from 0.490 to 0.532.
+- The seller results show that some full-sample relationships are influenced by the large number of low-volume sellers.
+
+### Next Steps
+- Begin the mid-semester presentation on October 19 using the strongest project findings developed so far.
+- Select the strongest preliminary visuals for the presentation.
+- Present the current project story, baseline results, limitations, and next analytical steps clearly.
+- Prepare for the next TA meeting and PSD5.
+- Begin improved analysis only after the mid-semester presentation block, according to the project timeline.
