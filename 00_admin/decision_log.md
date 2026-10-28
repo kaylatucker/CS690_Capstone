@@ -77,3 +77,17 @@
 - Keep average item value as a relevant seller factor because its relationship with total sales remained stable in the sensitivity analysis.
 - Treat the current customer and seller analyses as the completed baseline benchmark for later comparison with improved methods.
 - Do not add additional baseline methods solely for complexity; later work should address the baseline's inability to consider multiple explanatory factors simultaneously.
+
+## 2026-10-28
+
+- Do not present the correlation between seller order count and seller total sales as a substantive finding because total sales is mechanically related to the number of orders.
+- Keep `seller_total_sales` only as part of the historical baseline rather than the preferred final seller-performance measure.
+- Shift final seller-performance interpretation toward measures such as average order value, late-delivery rate, and average review score.
+- For the improved customer-experience analysis, use either ordinal logistic regression on review score or logistic regression focused on low reviews, depending on the final outcome definition.
+- Include delivery delay as a main predictor and consider product category, region, and freight as controls.
+- Report regression results using odds ratios and confidence intervals.
+- Include predicted low-review probabilities at selected delivery-delay values to communicate practical effect size.
+- Report median review scores alongside the Mann-Whitney baseline result and rank-biserial effect size.
+- State explicitly that the delivery-delay Spearman correlation uses all valid orders, including negative delay values for early deliveries, zero for on-time estimates, and positive values for late deliveries.
+- Create a dedicated figure for the product-category and customer-state robustness checks.
+- Prioritize analysis, interpretation, and the final report before optional SQL or dashboard work.
