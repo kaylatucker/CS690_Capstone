@@ -166,3 +166,30 @@
 - Present the current project story, baseline results, limitations, and next analytical steps clearly.
 - Prepare for the next TA meeting and PSD5.
 - Begin improved analysis only after the mid-semester presentation block, according to the project timeline.
+
+## 2026-10-28 — Mid-Semester and PSD5 Feedback
+
+### Progress
+- Reviewed instructor feedback from PSD5 and the mid-semester presentation.
+- Confirmed that the customer-experience analysis should move into a multivariable modeling stage.
+- Identified changes needed for how seller performance is defined and reported.
+- Clarified how the delivery-delay correlation should be described in the final report.
+- Identified an additional figure to create from the category/state robustness results.
+
+### Feedback and Direction
+- The seller relationship between total sales and order count should not be presented as a major finding because total sales is calculated across orders, making the relationship expected by construction.
+- Seller performance should be represented using measures that are less mechanically tied to order volume, such as average order value, late-delivery rate, or average review score.
+- For the improved customer-experience analysis, model low review scores or the ordered review-score outcome using delivery delay along with controls such as product category, region, and freight.
+- Report the effect of delivery delay using an odds ratio with a confidence interval.
+- Show predicted probabilities or shares of low reviews at selected delivery-delay values so the practical size of the effect is easier to interpret.
+- When reporting the original Mann-Whitney baseline, include the group medians and effect size rather than relying on the p-value alone.
+- Clarify that the existing delivery-delay Spearman correlation uses all orders with valid delivery information, including early, on-time, and late deliveries.
+- Create a dedicated visual showing that on-time reviews were higher across all 19 qualifying product categories and all 14 qualifying customer states.
+
+### Next Steps
+- Refine the seller-performance measures before final analysis.
+- Implement the improved customer-experience regression analysis.
+- Compare the improved model with the baseline and interpret practical effect sizes.
+- Create the category/state robustness figure.
+- Keep the final presentation deadline of December 6 and written report deadline of December 11 visible in the remaining project schedule.
+- Treat SQL or dashboard work as optional and only pursue it after the analysis and report are secure.
