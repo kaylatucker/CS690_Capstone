@@ -193,3 +193,62 @@
 - Create the category/state robustness figure.
 - Keep the final presentation deadline of December 6 and written report deadline of December 11 visible in the remaining project schedule.
 - Treat SQL or dashboard work as optional and only pursue it after the analysis and report are secure.
+
+## 2026-10-30 — Improved Analysis Completed
+
+### Progress
+- Completed Notebook 10: improved customer and seller analysis.
+- Developed adjusted customer logistic regression models.
+- Refined seller performance using sales per order and service-quality measures.
+- Added product-category, customer-state, seller-geography, freight, and pricing analyses.
+
+### Key Findings
+- Delivery delay was positively associated with low customer reviews.
+- Product categories and customer states showed additional differences after adjustment.
+- Higher seller late-delivery rates were associated with lower average reviews.
+- The seller-sales regression had limited explanatory power.
+
+### Next Steps
+- Validate dataset integrity, missingness, model assumptions, sensitivity, and predictive performance.
+
+## 2026-11-04 — Validation Week Completed Early
+
+### Progress
+- Completed the planned November 2–6 validation work in Notebook 11.
+- Passed all 34 data-integrity and calculation checks.
+- Tested customer-model sensitivity to extreme delays, freight values, fractional reviews, grouping thresholds, and canceled orders.
+- Compared delivery-only, adjusted linear, and adjusted spline logistic regression models on the same held-out test sample.
+- Validated seller models using different eligibility thresholds, weighting methods, and outlier exclusions.
+- Applied FDR correction to product-category and customer-state comparisons.
+
+### Key Findings
+- The customer model included 95,830 orders and excluded 3,611 (3.63%). Excluded orders with available reviews had substantially higher low-review rates.
+- Delivery delay remained positively associated with low reviews across sensitivity tests.
+- The relationship between delivery delay and dissatisfaction was nonlinear.
+- The adjusted spline model performed best on held-out data (ROC-AUC = 0.6915; Brier Score = 0.0950).
+- The customer model still had moderate predictive ability and underestimated dissatisfaction among the highest-risk orders.
+- Freight was not statistically significant after trimming extreme freight values.
+- Nine product-category comparisons and six customer-state comparisons remained significant after FDR correction in the spline model.
+- Seller late-delivery rates remained negatively associated with average reviews across all seller-quality validation tests.
+- The seller-sales regression remained weak, with R² approximately 0.01.
+
+### Challenges and Limitations
+- Missing delivery information excludes many canceled and undelivered orders.
+- The customer model primarily represents orders with completed delivery information.
+- The original linear customer model oversimplifies severe delivery delays.
+- Seller review and delivery measures exclude multi-seller orders.
+- Results are observational and cannot establish causation.
+- The dataset covers historical transactions from 2016–2018.
+
+### Decisions
+- Use the adjusted spline model for final customer-risk predictions.
+- Retain the weighted seller-quality model as the main seller analysis.
+- Emphasize validated delivery, product-category, and geographic findings.
+- Present freight and seller-sales results cautiously.
+
+### Next Steps — November 9–13
+- Interpret the validated findings in business terms.
+- Research supporting academic and industry literature.
+- Develop 3–5 evidence-based business recommendations.
+- Select the strongest figures and tables for the final report.
+- Prepare for November 16–20 reproducibility checks and notebook cleanup.
