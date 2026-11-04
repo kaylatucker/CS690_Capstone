@@ -91,3 +91,26 @@
 - State explicitly that the delivery-delay Spearman correlation uses all valid orders, including negative delay values for early deliveries, zero for on-time estimates, and positive values for late deliveries.
 - Create a dedicated figure for the product-category and customer-state robustness checks.
 - Prioritize analysis, interpretation, and the final report before optional SQL or dashboard work.
+
+## 2026-10-30 — Improved Analysis Decisions
+
+- Use logistic regression to examine low customer reviews (review_score <= 2), controlling for delivery delay, freight percentage, product category, and customer state.
+- Use sales per order and customer-service measures to evaluate sellers rather than relying primarily on total sales.
+- Retain the weighted seller-quality regression, using reviewed-order count as the weight.
+- Include product, geographic, operational, and pricing factors to address the full research question.
+- Treat freight and seller-sales relationships cautiously because some correlations are weak or mathematically related.
+
+## 2026-11-04 — Validation Decisions
+
+- Keep the processed datasets unchanged because all 34 data-integrity checks passed.
+- Document the exclusion of 3,611 customer orders, particularly canceled and undelivered orders with poor reviews.
+- Prefer the adjusted spline logistic regression for customer-risk predictions because it captures nonlinear delivery effects and performs better on held-out data.
+- Retain the original linear logistic regression for comparison and interpretation, but avoid presenting its constant daily odds ratio as valid across all delays.
+- Emphasize delivery reliability as the strongest and most consistent customer-experience finding.
+- Treat freight as tentative because its association was not statistically significant after trimming extreme values.
+- Use FDR-adjusted product-category and customer-state results when reporting significant differences.
+- Retain the weighted seller-quality regression because its findings remained stable across validation tests.
+- Present the seller-sales regression as exploratory because it has very low explanatory power.
+- Distinguish associations from causation and acknowledge the historical 2016–2018 dataset.
+- Keep SQL and dashboard development optional until the final report and presentation are secure.
+- Use November 9–13 for interpretation, literature research, business recommendations, and selecting final results.
