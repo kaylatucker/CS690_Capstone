@@ -114,3 +114,18 @@
 - Distinguish associations from causation and acknowledge the historical 2016–2018 dataset.
 - Keep SQL and dashboard development optional until the final report and presentation are secure.
 - Use November 9–13 for interpretation, literature research, business recommendations, and selecting final results.
+
+## 2026-11-13 — Visualization and Dashboard Decision
+
+**Decision:** Use Python visualizations to communicate the project's findings. Do not develop a Tableau or Power BI dashboard.
+
+**Reasoning:**
+- The project's primary focus remains analyzing seller performance and customer satisfaction using statistical and business analysis.
+- During November 9–13, seven new visualizations were created to communicate the previously validated findings.
+- These figures adequately illustrate the operational, product, geographic, and seller-performance relationships investigated.
+- A dashboard would not add sufficient analytical value to justify the additional development work.
+
+**Next Steps:**
+- November 16–20: Reproducibility checks, notebook cleanup, figure organization, and documentation.
+- November 23–25: Incorporate selected findings and figures into the written report.
+- December 4: Finalize the presentation.
