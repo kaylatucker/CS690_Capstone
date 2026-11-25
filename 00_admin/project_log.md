@@ -252,3 +252,27 @@
 - Develop 3–5 evidence-based business recommendations.
 - Select the strongest figures and tables for the final report.
 - Prepare for November 16–20 reproducibility checks and notebook cleanup.
+
+## November 25, 2026 — Reproducibility and Final Project Preparation
+
+**Progress:**
+- Transitioned all 12 notebooks from Google Colab to a local VS Code environment.
+- Updated file paths, removed unnecessary setup code, and reran the notebooks to verify consistency with my previous analytical results.
+- Cleaned and reorganized the GitHub repository, including notebook names, datasets, and final visualizations.
+- Created a `requirements.txt` file documenting the Python libraries and versions used.
+- Updated the README to include project context, software requirements, and instructions for reproducing the analysis.
+- Consolidated my final findings, statistical results, business recommendations, and limitations into a reference document for the final report and presentation.
+- Developed an outline for the written report following the six stages of the data analysis pipeline.
+
+**Challenges and decisions:**
+
+The reproducibility stage was completed later than originally scheduled. Transitioning from Google Colab to VS Code required addressing file path differences, library installations, and duplicate repository files. I decided to retain the individual notebooks in sequential order rather than combine them into one notebook, as this provides a more organized and transparent analytical workflow.
+
+**Next steps:**
+- Develop, practice, and record the final presentation.
+- Complete the first draft of the written report.
+- Conduct final reproducibility and technical verification.
+- Submit the final presentation.
+- Revise, proofread, and finalize the written report.
+
+The analytical portion of the project is complete! and the remaining work will primarily focus on communicating my findings and completing the final deliverables.
