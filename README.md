@@ -20,9 +20,7 @@ Which operational, product, and geographic factors are most strongly associated 
 - `02_data/raw/` — untouched source data
 - `02_data/processed/` — clean or manipulated data
 - `03_notebooks/` — exploratory and statistical analysis notebooks
-- `04_sql/` — SQL scripts/queries/database creation
-- `05_src/` — Python scripts/functions
-- `06_outputs/figures/` — final/exported charts
-- `06_outputs/tables/` — final/exported tables
-- `07_reports/` — report drafts and supporting documents
-- `08_presentations/` — presentation materials
+- `04_outputs/figures/` — final/exported charts
+- `04_outputs/tables/` — final/exported tables
+- `05_reports/` — report drafts and supporting documents
+- `06_presentations/` — presentation materials
