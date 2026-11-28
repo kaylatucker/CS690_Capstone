@@ -58,18 +58,22 @@ Controlling the False Discovery Rate: A Practical and Powerful Approach to Multi
 
 ## Writing and Editing Tools
 
-- **Grammarly.** (2026). [_Grammarly_](https://www.grammarly.com/). [Writing Assistant]
+- **GitHub.** (2026). [_GitHub Copilot_](https://github.com/features/copilot) [AI coding assistant].
 
-Used to polish text produced through speech-to-text dictation, improving grammar, punctuation, clarity, and readability. The original ideas, analysis, interpretations, and conclusions are my own.
+Used to assist with debugging, writing some commit messages, resolving code errors, and adapting Jupyter notebooks from Google Colab to run locally in Visual Studio Code. This included updating file paths, addressing dependency issues, and improving code portability and reproducibility. All suggested changes were reviewed, tested, and verified by me to ensure consistency with the original analytical results.
 
 - **Google.** (2026). [_Gemini_](https://gemini.google.com/) [Large language model]. 
 
 Google Gemini was used to assist with drafting and formatting some Markdown cells in this notebook. I reviewed and edited the generated text before including it. I also used Google Colab’s code-completion/autocomplete feature when it suggested portions of code that matched what I intended to write. All code, analyses, and results were reviewed and verified by me.
 
+- **Grammarly.** (2026). [_Grammarly_](https://www.grammarly.com/). [Writing Assistant]
 
-- **GitHub.** (2026). [_GitHub Copilot_](https://github.com/features/copilot) [AI coding assistant].
+Used to polish text produced through speech-to-text dictation, improving grammar, punctuation, clarity, and readability. The original ideas, analysis, interpretations, and conclusions are my own.
 
-Used to assist with debugging, writing some commit messages, resolving code errors, and adapting Jupyter notebooks from Google Colab to run locally in Visual Studio Code. This included updating file paths, addressing dependency issues, and improving code portability and reproducibility. All suggested changes were reviewed, tested, and verified by me to ensure consistency with the original analytical results.
+
+
+
+
 
 
 
