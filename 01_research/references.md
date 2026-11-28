@@ -64,7 +64,7 @@ Used to assist with debugging, writing some commit messages, resolving code erro
 
 - **Google.** (2026). [_Gemini_](https://gemini.google.com/) [Large language model]. 
 
-Google Gemini was used to assist with drafting and formatting some Markdown cells in this notebook. I reviewed and edited the generated text before including it. I also used Google Colab’s code-completion/autocomplete feature when it suggested portions of code that matched what I intended to write. All code, analyses, and results were reviewed and verified by me.
+Google Gemini was used to assist with drafting and formatting some Markdown cells in the notebooks. I reviewed and edited the generated text before including it. I also used Google Colab’s code-completion/autocomplete feature when it suggested portions of code that matched what I intended to write. All code, analyses, and results were reviewed and verified by me.
 
 - **Grammarly.** (2026). [_Grammarly_](https://www.grammarly.com/). [Writing Assistant]
 
